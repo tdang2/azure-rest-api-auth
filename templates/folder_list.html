@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of folders in ADLS</title>
+</head>
+<body>
+<p1><b>List of Folders:</b> </p1>
+<table>
+{% for folder in data %}
+   <tr>
+        <th> Name: </th>
+        <td> {{ folder.get('pathSuffix') }} </td>
+   </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>
